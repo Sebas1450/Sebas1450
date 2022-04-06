@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <meta charset="UTF-8">
+        <title>KORLEY ONLINE SHOPPING</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5fd06041a2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.html">
+    </head>
+    <body>
+        <section class="header"> 
+            <nav>
+                <a href="index.html" ><img src="logo.jpg" alt="The korley company logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.index">ABOUT</a></li>
+                        <li><a href="">ITEMS</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="textbox">
+                <h1>Best Quality Sneakers In Ghana</h1>
+                <p>
+                    Korley Sneakers makes it possible for you to purchase 
+                    affordable quality snaekers which will be delivered for 
+                    free across the nation.<br>
+                    The clock is ticking, get yours now!!! 
+                </p>
+                <a href="" class="hero-btn">Visit Us To Know More</a> 
+
+            </div>
+        </section>
+        <!--items -->
+        <section class="items">
+            <h1>Brands Available For Purchase</h1>
+            <p>Select the preferred sneaker by clicking on the images below.
+                Remember, there is never a bad choice with Korley sneakers 
+            </p>
+            
+            <div class="item-row">
+                <div class="item-col">
+                    <h3>Jordans</h3> 
+                    <p>Every type of Jordans</p>
+                    <p>All sizes</p> 
+
+                </div>
+                <div class="item-col">
+                    <h3>Yeezys</h3>
+                    <p>Every type of Yeezys</p>
+                    <p>All sizes</p>
+                </div>
+                <div class="item-col">
+                    <h3>Nikes</h3>
+                    <p>Every type of Nikes</p>
+                    <p>All sizes</p>
+
+                </div>
+                
+            </div>
+        </section>
+        <section class="secitem">
+            <p>other available Brands</p> 
+            <div class="secitem-row">
+                <div class="secitem-col">
+                    <h3>Reebok</h3>
+
+                </div>
+                <div class="secitem-col"> 
+                    <h3>Adidas</h3>
+
+                </div>
+                <div class="secitem-col">
+                    <h3>MCQueens</h3>
+
+                </div>
+            </div>
+        </section>
+
+        <!----Javascript for toggle menu----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right= "0";
+            }
+            function hideMenu(){
+                navLinks.style.right= "-200px";
+            }
+
+        </script>
+    </body>
+</html>
